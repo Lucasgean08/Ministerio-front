@@ -133,3 +133,21 @@ h3 {
     transform: scale(1.05); /* Leve zoom de 5% */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza a transição */
 }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #bbff00; /* ou outra cor de destaque */
+}
