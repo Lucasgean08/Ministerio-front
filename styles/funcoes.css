@@ -1,0 +1,135 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(254, 254, 254);
+}
+
+.container {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo Cabeçalho */
+header {
+    width: 100%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo {
+    margin-left: 20px; /* Afasta a logo da borda esquerda */
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: rgb(187, 255, 0);
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px; /* Reduzido para diminuir o espaçamento entre os links */
+}
+
+header .btn-contato {
+    margin-right: 20px; /* Afasta o botão de contato da borda direita */
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #bbff00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #f5d401;
+}
+
+img {
+    width: 120px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.page-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.page-content img {
+    width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+    max-width: 900px; /* A largura máxima será de 800px */
+    height: auto; 
+}
+h1 {
+    color: #000000;
+    font-size: 35px;
+}
+h3 {
+    color: #333;
+}
+
+.imagens-menores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imagem-menor {
+    width: 37%;
+    
+}
+
+.imagem-menor img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.imagem-principal img:hover,
+.imagem-menor img:hover {
+    box-shadow: 0 0 15px 5px rgba(187, 255, 0, 0.7); /* Efeito de luz ao redor da borda */
+    transform: scale(1.05); /* Leve zoom de 5% */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza a transição */
+}
